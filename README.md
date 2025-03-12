@@ -11,4 +11,4 @@
 # Separate environments
 ## yarn playwright test --project=staging
 ## yarn playwright test --project=production
-###Pointing to these results in a 403 forbidden. With time constraints I didn't manage to troubleshoot this. I figure there is a designated url for both staging and production.
+Pointing to these results in a 403 forbidden. With time constraints I didn't manage to troubleshoot this. I figure there is a designated url for both staging and production.
