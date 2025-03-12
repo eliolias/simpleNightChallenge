@@ -29,8 +29,8 @@ export class SearchPage extends BasePage {
   async adjustMinPrice(): Promise<void> {
     const minBoundingBox = await this.minPriceSlider.boundingBox();
     const minStartCoords = {
-      x: minBoundingBox.x + minBoundingBox.width / 2,
-      y: minBoundingBox.y + minBoundingBox.height / 2,
+      x: minBoundingBox!.x + minBoundingBox!.width / 2,
+      y: minBoundingBox!.y + minBoundingBox!.height / 2,
     };
     while (stringToInt(await this.minPriceSlider.textContent()) < 99) {
       await this.minPriceSlider.hover();
@@ -47,8 +47,8 @@ export class SearchPage extends BasePage {
   async adjustMaxPrice(): Promise<void> {
     const maxBoundingBox = await this.maxPriceSlider.boundingBox();
     const maxStartCoords = {
-      x: maxBoundingBox.x + maxBoundingBox.width / 2,
-      y: maxBoundingBox.y + maxBoundingBox.height / 2,
+      x: maxBoundingBox!.x + maxBoundingBox!.width / 2,
+      y: maxBoundingBox!.y + maxBoundingBox!.height / 2,
     };
     while (stringToInt(await this.maxPriceSlider.textContent()) > 999) {
       await this.maxPriceSlider.hover();
