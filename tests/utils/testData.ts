@@ -1,5 +1,4 @@
 //Test Data separated out
-
 export const testData = {
   location: "Miami",
   minPrice: 100,

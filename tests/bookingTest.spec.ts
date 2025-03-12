@@ -27,7 +27,7 @@ test("Goes through the booking process for a hotel and verifies that rating and 
   // Adjust filters
   await searchPage.setGuestScoreFilter();
   await searchPage.adjustMinPrice();
-  //Timeout is here because for some reason the page will load the slider and place the maxPrice slider at the end of the slider track, then the pagewill update and all of a sudden the slider will update it's position so that the slider will not be at the end of the track.
+  //Timeout is here because for some reason the page will load the slider and place the maxPrice slider at the end of the slider track, then the page will update and all of a sudden the slider will update it's position so that the slider will not be at the end of the track.
   await page.waitForTimeout(2000);
   await searchPage.adjustMaxPrice();
 

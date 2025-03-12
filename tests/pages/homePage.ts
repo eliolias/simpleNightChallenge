@@ -78,6 +78,5 @@ export class HomePage extends BasePage {
 
   async searchHotels(): Promise<void> {
     await this.searchButton.click();
-    await this.page.waitForTimeout(1000);
   }
 }
