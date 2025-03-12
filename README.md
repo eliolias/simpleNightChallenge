@@ -5,8 +5,9 @@ There are some commments in the code. I am aware that production level code shou
 ### yarn install
 
 # Running tests
-### yarn playwright test
 ### yarn playwright test --ui
+Or if preferred to run without UI
+### yarn playwright test
 
 # Separate environments
 ### yarn playwright test --project=staging
